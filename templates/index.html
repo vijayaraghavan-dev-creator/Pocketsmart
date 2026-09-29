@@ -1,0 +1,13 @@
+{% extends "base.html" %}{% block content %}
+<section class="hero"><h1>Plan smarter. Spend within budget.</h1>
+<p>Gen AI powered budget and recommendation assistant for your home, parties and jewelry, with picks from Amazon, Flipkart, IKEA, Swiggy, Zomato and OYO.</p>
+<a class="btn" href="{{ '/dashboard' if user else '/register' }}">Get started</a></section>
+<div class="grid">
+<div class="card"><h3>🏠 Home Interior</h3><p class="note">Enter rooms and quantities; get balanced picks for lights, fans, furniture and decor.</p><a href="/home-planner">Open planner</a></div>
+<div class="card"><h3>🎉 Party Planner</h3><p class="note">Split your budget across catering, decoration, entertainment and stay.</p><a href="/party-planner">Open planner</a></div>
+<div class="card"><h3>💍 Jewelry</h3><p class="note">Match jewelry to your occasion, style and even your outfit photo.</p><a href="/jewelry-planner">Open planner</a></div></div>
+<h2>Testimonials</h2><div class="grid">
+<div class="card">"Furnished my flat within budget in one evening."<p class="note">- Priya, Chennai</p></div>
+<div class="card">"The party split saved us so much guesswork."<p class="note">- Arun, Trichy</p></div>
+<div class="card">"Jewelry picks matched my saree perfectly."<p class="note">- Meena, Madurai</p></div></div>
+{% endblock %}

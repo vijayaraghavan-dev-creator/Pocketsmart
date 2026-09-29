@@ -1,0 +1,17 @@
+:root{--p:#5b3df5;--bg:#f6f5ff;--c:#fff;--t:#1d1b2e;--m:#6b6880;--b:#e4e1f5}
+*{box-sizing:border-box}body{margin:0;font-family:system-ui,Segoe UI,Arial,sans-serif;background:var(--bg);color:var(--t);line-height:1.5}
+a{color:var(--p);text-decoration:none}main{max-width:1000px;margin:0 auto;padding:24px 16px;min-height:75vh}
+.nav{display:flex;flex-wrap:wrap;gap:12px;justify-content:space-between;align-items:center;padding:12px 24px;background:var(--c);border-bottom:1px solid var(--b)}
+.nav nav{display:flex;flex-wrap:wrap;gap:16px;align-items:center}.brand{font-weight:800;font-size:1.2rem}
+.btn{display:inline-block;background:var(--p);color:#fff;border:0;border-radius:10px;padding:11px 20px;font-size:1rem;cursor:pointer}
+.btn:disabled{opacity:.6}.btn.small{padding:6px 12px;font-size:.9rem}.btn.alt{background:#fff;color:var(--p);border:1px solid var(--p)}
+.hero{text-align:center;padding:48px 0}.hero h1{font-size:2.4rem;margin:0 0 8px}.hero p{color:var(--m);max-width:600px;margin:0 auto 20px}
+.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(230px,1fr));gap:16px;margin:16px 0}
+.card,.panel{background:var(--c);border:1px solid var(--b);border-radius:14px;padding:18px}.card h4,.card h3{margin:.4rem 0}
+.tag{background:#ece8ff;color:var(--p);border-radius:20px;padding:2px 10px;font-size:.8rem}.price{font-weight:700;font-size:1.2rem;margin:.2rem 0}
+form.panel{display:grid;gap:12px;max-width:560px}label{font-weight:600;display:grid;gap:4px}
+input,select,textarea{padding:10px;border:1px solid var(--b);border-radius:8px;font:inherit;width:100%}
+.error{color:#c0182b;background:#fdecee;padding:10px;border-radius:8px}.note{color:var(--m)}.tip{background:#fff8e1;padding:8px 12px;border-radius:8px}
+.total{font-weight:700;font-size:1.1rem}#result{margin-top:24px;max-width:1000px}
+table{width:100%;border-collapse:collapse;background:var(--c);border-radius:12px;overflow:hidden}td,th{padding:10px;border-bottom:1px solid var(--b);text-align:left}
+.stat{font-size:2rem;font-weight:800;color:var(--p)}footer{text-align:center;color:var(--m);padding:24px;font-size:.9rem}

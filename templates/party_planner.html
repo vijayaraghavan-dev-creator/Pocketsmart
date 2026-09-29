@@ -1,0 +1,10 @@
+{% extends "base.html" %}{% block title %}Party Planner{% endblock %}{% block content %}
+<h2>🎉 Party Budget Planner</h2>
+<form class="panel" id="f">
+<label>Total budget (₹)<input type="number" name="budget" min="1" required></label>
+<label>Guest count<input type="number" name="guests" min="1" required></label>
+<label>Event type<select name="event_type"><option>Birthday</option><option>Corporate</option><option>Wedding</option><option>Anniversary</option><option>Get-together</option></select></label>
+<label>Venue details<input name="venue" placeholder="Home terrace / banquet hall in Trichy"></label>
+<button class="btn">Get recommendations</button></form>
+<div id="result"></div>{% endblock %}
+{% block scripts %}<script>initPlanner("f","/generate-party")</script>{% endblock %}
